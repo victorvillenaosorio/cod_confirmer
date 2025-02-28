@@ -107,12 +107,12 @@ export function useVapi() {
     };
     
 
-    const response = vapi.start("465b7d3f-1da1-4035-82c6-7681d8e6120c", {
-transcriber: {
-  provider: 'deepgram',
-  model: 'nova-2',
-  language: 'es'
-}
+    const response = vapi.start("465b7d3f-1da1-4035-82c6-7681d8e6120c", { transcriber: 
+      {
+        provider: 'deepgram',
+        model: 'nova-2',
+        language: 'es'
+      }
     });
     
     response.then((res) => {
